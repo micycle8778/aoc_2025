@@ -13,8 +13,10 @@ fn main() {
             return;
         };
 
-        match day.as_str() {
-            "one" => aoc_2025::one::solution(&mut file),
+        let part_two = day.ends_with('2');
+
+        match day.strip_suffix('2').unwrap_or(day.as_str()) {
+            "one" => aoc_2025::one::solution(&mut file, part_two),
             _ => eprintln!("i dont have a solution for that day")
         }
     } else {
