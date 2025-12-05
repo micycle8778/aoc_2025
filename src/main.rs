@@ -17,6 +17,7 @@ fn main() {
 
         match day.strip_suffix('2').unwrap_or(day.as_str()) {
             "one" => aoc_2025::one::solution(&mut file, part_two),
+            "five" => aoc_2025::five::solution(&mut file, part_two),
             _ => eprintln!("i dont have a solution for that day")
         }
     } else {
