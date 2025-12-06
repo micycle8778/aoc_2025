@@ -19,6 +19,7 @@ fn main() {
             "one" => aoc_2025::one::solution(&mut file, part_two),
             "two" => aoc_2025::two::solution(&mut file, part_two),
             "three" => aoc_2025::three::solution(&mut file, part_two),
+            "four" => aoc_2025::four::solution(&mut file, part_two),
             "five" => aoc_2025::five::solution(&mut file, part_two),
             "six" => aoc_2025::six::solution(&mut file, part_two),
             _ => eprintln!("i dont have a solution for that day")
