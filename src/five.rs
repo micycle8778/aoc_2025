@@ -4,7 +4,6 @@ use std::ops::RangeInclusive;
 type R = RangeInclusive<u64>;
 trait RangeExt {
     fn contains_range(&self, other: &Self) -> bool;
-
 }
 
 impl RangeExt for R {
@@ -16,7 +15,6 @@ impl RangeExt for R {
 /// # Panics 
 /// This function panics on file read error.
 pub fn solution(f: &mut File, part_two: bool) {
-
     let mut ret = 0;
     let mut ranges = Vec::<R>::new();
 

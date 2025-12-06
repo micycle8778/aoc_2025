@@ -1,3 +1,5 @@
-#![forbid(clippy::pedantic)]
+#![deny(clippy::pedantic)]
+
 pub mod one;
 pub mod five;
+pub mod two;
