@@ -123,9 +123,13 @@ mod part_two {
             self.iter().map(|s| match *s {
                 State::Splitter => '^',
                 State::Count(n) => {
-                    if n >= 16 {
+                    if n == 0 {
+                        '.'
+                    }
+                    else if n >= 16 {
                         'F'
-                    } else {
+                    } 
+                    else {
                         format!("{:x}", n).chars().next().unwrap()
                     }
                 }
