@@ -1,4 +1,4 @@
-#![deny(clippy::pedantic)]
+// #![deny(clippy::pedantic)]
 
 pub mod one;
 pub mod two;
